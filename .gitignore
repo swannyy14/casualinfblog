@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+/blogdown
+.Rproj
+/public/
+.DS_Store
+Thumbs.db
