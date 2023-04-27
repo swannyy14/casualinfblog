@@ -25,9 +25,9 @@ image: ''
 <h2>Setup</h2>
 <p>First, I need functions to imitate the guess evaluations at every step of wordle.</p>
 <p><code>check_answer</code> takes a guess and an answer, which then returns a length 5 character vector consisting of <code>"x"</code>, <code>"o"</code>, and <code>"p"</code>. <code>"x"</code> indicates that the guessed letter is not in the solution. <code>"o"</code> indicates that the guessed letter is in the correct position. Finally, <code>"p"</code> indicates that the guessed letter is in the solution, but not in the right position. For simplicity and speed, each “word” is represented as a character vector of length 5, each element being a letter.</p>
-<pre class="r"><code>suppressPackageStartupMessages(library(stringr))
-
-check_answer &lt;- function(g, ans) {
+<pre class="r"><code>suppressPackageStartupMessages(library(stringr))</code></pre>
+<pre><code>## Warning: package &#39;stringr&#39; was built under R version 4.2.2</code></pre>
+<pre class="r"><code>check_answer &lt;- function(g, ans) {
   # g is guess, ans is the answer
   # return a 5 length vector that is a combination of &quot;x&quot;, &quot;o&quot;, &quot;p&quot;
   # &quot;x&quot;: the letter is not in the word
